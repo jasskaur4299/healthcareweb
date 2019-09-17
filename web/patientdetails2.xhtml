@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+       
+        xmlns:p="http://java.sun.com/jsf/html"
+            
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+   <h:head>
+        <title>Patient Details</title>
+        <style>
+            .c{
+                 border-collapse: collapse;
+                 width:50%; 
+                
+                 border: solid; 
+                 text-align: left;
+                 alignment-baseline: central;
+                  
+            }
+                .b {
+         background-color: #000000;
+        border: 2px solid #000000 ;
+         color: white;
+       
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+         font-size: 16px;
+         border-radius: 20%;
+         height: 50px;
+         width: 90px;
+         
+         
+            
+      }
+            
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+             <h:graphicImage alt="image could not found" id="f4" value="https://lupusnewstoday.com/wp-content/uploads/2018/08/shutterstock_400002673-1400x480.jpg" width="1400" height="380"></h:graphicImage>
+             
+            <div align="center">
+                <h1>
+                    <caption> PATIENT DETAILS</caption></h1>
+            </div>
+             <div align="center" >
+            <table class="c">
+                 <tr>
+                 <th>NAME</th>
+                  <th>ID</th> 
+                   <th>PASSWORD</th>
+                   <th>CONTACT</th>
+                   <th>DOB</th>
+                    </tr>
+                     <tr>
+                     <td>Neha</td>
+                      <td>201</td>
+                      <td>hineha</td> 
+                      <td>7838853564</td>
+                      <td>14 Aug 1992</td>
+                        </tr>
+                        <tr>
+                 <td>Priya</td>
+                  <td>202</td>
+                <td>hipriya</td> 
+                 <td>7838853987</td>
+                 <td>5 Sep 1999</td>
+                    </tr>
+                <tr>
+                 <td>Kunal</td>
+                  <td>203</td>
+                <td>hikunal</td> 
+                 <td>7838853951</td>
+                 <td>7 Oct 1988</td>
+                    </tr>
+                <tr>
+                 <td>Rohit</td>
+                  <td>204</td>
+                <td>hirohit</td> 
+                <td>7838853025</td>
+                 <td>24 Jan 1979</td>
+                    </tr>
+                <tr>
+                 <td>Vaibhav</td>
+                  <td>205</td>
+                <td>hivaibhav</td> 
+                <td>7838853098</td>
+                 <td>2 April 1984</td>
+                    </tr>
+                <tr>
+                 <td>Shreya</td>
+                  <td>206</td>
+                <td>hishreya</td> 
+                <td>7838853098</td>
+                 <td>4 June 2003</td>
+                    </tr>
+                </table>
+            </div>
+             <div align="right">
+            <h:commandButton  class="b" value="LOGOUT" action="loginp"></h:commandButton>  &nbsp;
+           
+            </div>
+       <!-- Please Enter Id : <h:inputText id="id" value="123"  pt:placeholder="ENTER ID " required="true" requiredMessage="Please Enter Your Id"/><h:message for="id"></h:message>
+        <br/>
+        <br/>
+        
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+         <h:commandButton value="View Details" action=" profile">
+         </h:commandButton>
+         
+         <p:dataTable value="#{Info.data}" var="d">
+            <p:column>
+                <f:facet name="header"> NAME </f:facet> 
+                #{d.name}
+                 
+            </p:column>
+            <p:column>
+                <f:facet name="header"> ID </f:facet> 
+                #{d.id}
+                
+            </p:column>
+            <p:column>
+                <f:facet name="header"> PASSWORD </f:facet> 
+              #{d.password}
+                
+            </p:column>
+            <p:column>
+                <f:facet name="header"> CONTACT </f:facet> 
+                #{d.contact}
+                
+            </p:column>
+            <p:column>
+                <f:facet name="header"> DOB </f:facet> 
+                #{d.dob}
+                
+            </p:column>
+        
+        </p:dataTable>-->
+         </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Fixappointment</title>
+         <style>
+             .b {
+         background-color: #000000;
+        border: 2px solid #000000 ;
+         color: white;
+       
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+         font-size: 16px;
+         border-radius: 20%;
+         height: 50px;
+         width: 70px;
+         
+         
+            
+      }
+      .button {
+         background-color: #000000;
+        border: 2px solid #000000 ;
+         color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+         font-size: 20px;
+         
+         height: 50px;
+         width: 200px;
+         
+         
+                }  
+            
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+             <h:graphicImage alt="image could not found" id="f2" value="https://lupusnewstoday.com/wp-content/uploads/2018/08/shutterstock_400002673-1400x480.jpg" width="1400" height="380"></h:graphicImage>
+             <div align="center">
+            <h:panelGrid columns="2" frame="box" >
+                Name: <h:inputText id="name" value="#{appBean.name}"/>
+                Contact: <h:inputText id="contact" value="#{appBean.contact}"/>
+                Age: <h:inputText id="age" value="#{appBean.age}"/>
+                Symptoms: <h:inputText id="symptom" value="#{appBean.symptom}"/>
+            </h:panelGrid>
+                 </div>
+            <br/>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <div align="center">
+           <h:commandButton  class="button" value="Fix Appointment" action="#{appBean.app}">
+            </h:commandButton>
+           </div>
+           <div align="right">
+            <h:commandButton  class="b" value="HOME" action="profile"></h:commandButton>  &nbsp;
+           
+            </div>
+        </h:form>     
+    </h:body>
+</html>
+
