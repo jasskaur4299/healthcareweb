@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      >
+    <h:head>
+        <title>Login</title>
+          <style>
+            
+        .s {
+         font-size: 20px;
+            }
+              .button {
+         background-color: #000000;
+        border: 2px solid #000000 ;
+         color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+         font-size: 20px;
+        
+         height: 50px;
+         width: 150px;
+         
+                }  
+            
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+             <h:graphicImage alt="image could not found" id="f4" value="https://lupusnewstoday.com/wp-content/uploads/2018/08/shutterstock_400002673-1400x480.jpg" width="1400" height="380"></h:graphicImage>
+             <div align="center" class="s">
+                
+            
+                 PLEASE SELECT: <h:selectOneRadio value="#{myBean.category}">
+                  <f:selectItem itemValue="doctor" itemLabel="DOCTOR"/>
+                  <f:selectItem itemValue="patient" itemLabel="PATIENT"/>
+                  <f:selectItem itemValue="admin" itemLabel="ADMIN"/>
+                 </h:selectOneRadio><br></br>
+                 <h:message for="oneRadio"></h:message>
+                 ID: <h:inputText id="id" value="#{myBean.id}"  pt:placeholder="ENTER ID " required="true" requiredMessage="Please Enter Your Id"/><h:message for="id"></h:message> &nbsp; &nbsp;&nbsp;&nbsp;
+                 PASSWORD : <h:inputSecret id="pass" value= "#{myBean.pass}" pt:placeholder="ENTER PASSWORD " required="true" requiredMessage="Please Enter Your Password"/><h:message for="pass"></h:message>
+           
+             <br/>
+             <br/>
+                 
+             <h:commandButton class="button" value="Login" action="#{myBean.log}">
+        </h:commandButton>
+        <br/>
+        </div>
+        
+        </h:form>
+        
+        <h:form>
+            <br/>
+            <div align="center" style="font-size: 20px">
+            <h:commandLink value="Sign Up" action="register"></h:commandLink>
+            <br/>
+            <br/>
+           
+           
+            </div>
+            <br/>
+            <h:commandButton value="Loginpatent" action="profile">
+        </h:commandButton>
+            <br/>
+            <br/>
+            <h:commandButton value="Logindoctor" action="profiledoc">
+        </h:commandButton>
+            <br/>
+            <br/>
+            <h:commandButton value="Loginadmin" action="profileadmin">
+        </h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+
